@@ -1,0 +1,104 @@
+﻿<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+
+	<title>陈蕾，我爱你 </title>  
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<style type="text/css">
+		@font-face {
+			font-family: digit;
+			src: url("digital-7_mono.ttf"/*tpa=./digital-7_mono.ttf*/) format("truetype");
+		}
+	</style>
+	<link href="css/default.css" tppabs="./css/default.css" type="text/css" rel="stylesheet">
+	<script type="text/javascript" src="js/jquery.js" tppabs="./js/jquery.js"></script>
+	<script type="text/javascript" src="js/garden.js" tppabs="./js/garden.js"></script>
+    <script type="text/javascript" src="js/functions.js" tppabs="./js/functions.js"></script>
+<body>
+	<div id="mainDiv">
+		<div id="content">
+			<audio autoplay="autoplay" height="100" width="100">
+				<source src="renxi.mp3" type="audio/mp3" />
+				<embed height="100" width="100" src="renxi.mp3" />
+			</audio>
+			<div id="code">
+				<span class="comments">我的Chen：</span><br />
+				<span class="space"><span class="comments">我爱你</span></span><br />
+				<span class="space"/><span class="comments">向日葵有个很好的花语：“入目无他人，四下皆是你，有你时，你是太阳我目不转睛，无你时，我低头谁也不见”，一眼就喜欢上的人怎能轻易忘掉。
+			</span><br />
+				<span class="space"/><span class="comments">陈，对不起，过去两个月没给你最渴望的安稳，异地恋真的很难，我真的很想陪你走下去，有时候我可能很笨，说的话做的事可能不如你意，偶尔还带点小脾气，冷落了你，但我会努力改正我的缺点。</span><br />
+				<span class="space"/><span class="comments">被人焐热再丢掉真的很残忍，请原谅我先前说出伤害你的话。但受委屈了要及时跟我说，不许自己一个人藏在心里，虽然你很独立，但我怎么能让你一个人扛下了所有，我会一直爱你，照顾你的小情绪，保护你！
+				蕾，顺利的话，我们结婚，不顺利的话，我们晚点结婚，我的意思是：我不想错过你，接受我，好吗？</span><br />
+				<span class="space"/><span class="comments">我喜欢你;我喜欢你;我喜欢你;我喜欢你;我喜欢你;我喜欢你;我喜欢你;我喜欢你;我喜欢你;我喜欢你;我喜欢你;<a href="http://www.520chenlei.cn">www.wang520chen</a> 
+				2021.08.31</span><br />
+			</div>
+			<div id="loveHeart">
+				<canvas id="garden"></canvas>
+				<div id="words">
+					<div id="messages">
+						蕾, 这是我们认识的第
+						<div id="elapseClock"></div>
+					</div>
+					<div id="loveu">
+						永远爱你，一辈子，不分离！<br/>
+						<div class="signature">- 最爱你的人</div>
+
+				</div>
+			</div>
+</div>
+	<div class="bg1">	
+		<div class="main">
+			<footer style="line-height:20px">
+                <div id="copyright">
+                  <p><a href='http://51bbw.cn' target="_blank"></a> 
+                    <a href="http://ymjzy.net" target="_blank"></a>
+                    <a href="" target="_blank"></a></p>
+
+                </div>
+		</div>
+	</div>
+</div>
+
+	<script type="text/javascript">
+		var offsetX = $("#loveHeart").width() / 2;
+		var offsetY = $("#loveHeart").height() / 2 - 55;
+		var together = new Date();
+		together.setFullYear(2009, 08, 03);
+		together.setHours(20);
+		together.setMinutes(0);
+		together.setSeconds(0);
+		together.setMilliseconds(0);
+		
+		if (!document.createElement('canvas').getContext) {
+			var msg = document.createElement("div");
+			msg.id = "errorMsg";
+			msg.innerHTML = "提醒您：您的浏览器版本过旧^_^<br/>"+
+				"推荐使用 <a href='http://dlsw.br.baidu.com/ditui/zujian/bdBrowserSetup-5956-ftn_1000061134.exe' target='_blank'>百度浏览器<br/>请先升级您的浏览器，效果很炫哦~~"; 
+			document.body.appendChild(msg);
+			$("#code").css("display", "none")
+			$("#copyright").css("position", "absolute");
+			$("#copyright").css("bottom", "10px");
+		    document.execCommand("stop");
+		} else {
+			setTimeout(function () {
+				adjustWordsPosition();
+				startHeartAnimation();
+			}, 5000);
+
+			timeElapse(together);
+			setInterval(function () {
+				timeElapse(together);
+			}, 500);
+
+			adjustCodePosition();
+			$("#code").typewriter();
+		}
+	</script>
+    <audio id="bgmMusic" src="http://qzone.haoduoge.com/music/C2C3F0LSXH4D771253124A26CF9C71C939B2A.mp3" preload="auto" type="audio/mp3" autoplay loop></audio>
+    
+
+
+</body>
+</html>
